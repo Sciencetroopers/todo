@@ -36,6 +36,9 @@ gem 'nokogiri'
 gem 'rack', '~> 2.0.1'
 gem 'rspec'
 
+gem 'devise', '~> 4.2'
+gem 'haml', '~> 4.0', '>= 4.0.7'
+gem 'erb2haml', '~> 0.1.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
