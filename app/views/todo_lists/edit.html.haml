@@ -1,5 +1,8 @@
-%h1 Editing Todo List
-= render 'form', todo_list: @todo_list
-= link_to 'Show', @todo_list
-|
-= link_to 'Back', todo_lists_path
+%h1.todo_list_title Editing Todo List
+.forms
+  = render 'form', todo_list: @todo_list
+.links
+  = link_to todo_lists_path do
+    %i.fa.fa-backward{:style => "padding-right: 1.8em"}
+  = link_to @todo_list do
+    %i.fa.fa-expand

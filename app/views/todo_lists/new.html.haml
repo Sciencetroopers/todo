@@ -1,3 +1,6 @@
-%h1 New Todo List
-= render 'form', todo_list: @todo_list
-= link_to 'Back', todo_lists_path
+%h1.todo_list_title New Todo List
+.forms
+  = render 'form', todo_list: @todo_list
+.links
+  = link_to todo_lists_path do
+    %i.fa.fa-times

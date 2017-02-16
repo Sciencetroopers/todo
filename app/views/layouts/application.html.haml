@@ -6,5 +6,10 @@
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    -# from google fonts => light, normal, bold
+    %link{:href=>"https://fonts.googleapis.com/css?family=Lato:300,400,700", :rel=>"stylesheet"}
+    -# More styles From font awesome => Figure out how to use it well
+
   %body
-    = yield
+    .container
+      = yield
